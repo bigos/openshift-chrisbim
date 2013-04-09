@@ -46,3 +46,29 @@ gem 'thor', '= 0.14.6'
 
 # This needs to be installed so we can run Rails console on OpenShift directly
 gem 'minitest'
+
+
+### my gems
+
+gem 'will_paginate'
+gem 'paperclip'
+gem 'haml-rails'
+gem "authlogic", "~> 3.2.0"
+gem "ckeditor"
+
+group :development, :test do
+  gem "rspec-rails", ">= 2.0.1"
+  gem 'database_cleaner'
+  gem "factory_girl_rails", "~> 4.0"		
+end
+
+group :test do
+  gem 'cucumber-rails'      
+end
+
+gem 'jquery_datepicker'
+gem "jquery-fileupload-rails"
+
+gem "recaptcha", :require => "recaptcha/rails"
+
+gem 'fancybox-rails'
