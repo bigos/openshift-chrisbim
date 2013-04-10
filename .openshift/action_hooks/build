@@ -8,4 +8,5 @@ if [ ! -d $OPENSHIFT_DATA_DIR/system ]; then
 mkdir $OPENSHIFT_DATA_DIR/system
 fi
 
-ln -sf $OPENSHIFT_DATA_DIR/system $OPENSHIFT_REPO_DIR/public/system/
+ln -sf $OPENSHIFT_DATA_DIR/system $OPENSHIFT_REPO_DIR/public
+
