@@ -1,7 +1,6 @@
 class Slide < ActiveRecord::Base
   attr_accessible :caption, :position, :visible, :photo
   
-  # will it work?
   has_attached_file :photo, :styles => { :thumb => "190x90>" }
  
   validates_presence_of :caption
