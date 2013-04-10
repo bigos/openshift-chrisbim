@@ -1,0 +1,18 @@
+
+= form_for @tag do |f|
+  - if @tag.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@tag.errors.count, "error")} prohibited this tag from being saved:"
+      %ul
+        - @tag.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+
+  .field
+    = f.label 'parent tag'
+    = f.select :parent_id, Tag.find(:all,:order => 'name').collect {|t| [ t.name, t.id ] }, { :include_blank => true }
+  .actions
+    = f.submit 'Save'

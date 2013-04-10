@@ -1,0 +1,13 @@
+%p#notice= notice
+
+%p
+  %b Type:
+  = @workshop.duration
+%h1
+  = @workshop.title + ' - ' + @workshop.date_range
+%p
+  != @workshop.content
+
+= link_to 'Edit', edit_workshop_path(@workshop)
+\|
+= link_to 'Back', workshops_path

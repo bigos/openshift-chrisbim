@@ -1,0 +1,293 @@
+p, ol, ul, td {
+font-family: verdana, arial, helvetica, sans-serif;
+line-height: 18px;
+}
+div#todo{background:red;
+color:white;
+padding:1em;}
+
+body {
+    background: none repeat scroll 0 0 #333333;
+    font-family: arial,verdana,sans-serif;
+}
+div#wrapper {
+    margin: 0 auto;
+}
+div#page {
+    background: none repeat scroll 0 0 white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+div#logo {
+    padding: 25px;
+}
+div#logo a img {
+    border: medium none;
+}
+div#login {
+    float: right;
+    text-align: right;
+    width: auto;
+}
+div#login a {
+    color: black;
+    text-decoration: none;
+}
+div#navbar {
+    background: none repeat scroll 0 0 gray;
+    border: 1px none gray;
+    padding: 10px 10px 10px 20px;
+}
+div#navbar a {
+    color: white;
+    font-size: 16px;
+    margin-right: 25px;
+    padding: 10px 5px;
+    text-decoration: none;
+}
+div#navbar a:hover {
+    background: none repeat scroll 0 0 orange;
+}
+div#navbar a:active {
+    background: none repeat scroll 0 0 #FF8C00;
+}
+div#content {
+    border: 1px none red;
+    margin: 25px;
+    min-height: 380px;
+}
+
+h1.first_heading {
+    background: none repeat scroll 0 0 orange;
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 2em;
+    padding: 0.5em;
+    text-transform: uppercase;
+}
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+}
+a.orange {
+    background: none repeat scroll 0 0 transparent;
+    color: #FFA500;
+}
+a.orange:active {
+    color: #FF8C00;
+}
+p.first {
+    margin-top: 0;
+}
+p.last {
+    margin-bottom: 0;
+}
+p.under_construction {
+    background: url("/images/under_construction_small.png") no-repeat scroll 0 0 transparent;
+    border: 2px none red;
+    font-size: 20px;
+    height: 50px;
+    padding-left: 45px;
+    padding-top: 15px;
+}
+div#footer {
+    background: black;
+    font-size:0.75em;
+    clear: both;
+    color: white;
+    padding: 0.25em;
+    text-align: center;
+}
+div#dump {
+    background: none repeat scroll 0 0 yellow;
+    margin: 2em auto auto auto;
+    padding: 1em;
+}
+form {
+    font-size: 13px;
+}
+form input {
+    font-size: 14px;
+    padding: 5px;
+}
+form select {
+    font-size: 14px;
+    padding: 5px;
+}
+form#new_contact_message {
+    width: 330px;
+}
+form#new_contact_message input {
+    width: 330px;
+}
+form#new_contact_message textarea {
+    font-size: 16px;
+    height: 164px;
+    width: 330px;
+}
+.first_par {
+    margin-top: 0;
+}
+.heading {
+    background: none repeat scroll 0 0 orange;
+    color: white;
+    margin-bottom: 2em;
+    padding: 0.5em;
+}
+form#contact_form p {
+    margin-bottom: 24px;
+}
+#contact_picture {
+    float: right;
+    margin-top: 0;
+}
+img#home_image {
+    float: right;
+    margin: 0 0 25px 35px;
+}
+img#about_me {
+    float: right;
+    margin: 0 0 25px 35px;
+}
+#slideshow_wrapper {
+    height: 560px;
+}
+#slideshow {
+    display: table-cell;
+    margin: 20px auto;
+    min-height: 12em;
+    padding: 2px;
+    text-align: center;
+    vertical-align: middle;
+}
+.slide {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    position: absolute;
+    text-align: center;
+    width: 830px;
+    z-index: 10;
+}
+.slide img {
+    background-color: #333333;
+    border: 1px solid #333333;
+    display: block;
+    margin: 5px auto;
+    padding: 0;
+    text-align: center;
+}
+div#thumbnails {
+    background: none repeat scroll 0 0 #333333;
+    height: 105px;
+    padding: 5px;
+}
+div#photo_area {
+    background: none repeat scroll 0 0 #444444;
+    border: 1px none blue;
+    padding: 5px;
+}
+div#large_photo_container {
+    border: 1px none green;
+    height: 610px;
+    width: 900px;
+}
+div#large_photo {
+    background: none no-repeat scroll center center #444444;
+    border: 1px none red;
+    margin: 0 auto;
+    overflow: auto;
+}
+div#filmstrip {
+    background: none repeat scroll 0 0 #444444;
+    border: 1px none red;
+    height: 100px;
+}
+div#filmstrip a img {
+    border: 1px none red;
+}
+div#filmstrip a {
+    height: 100px;
+    text-decoration: none;
+}
+div#filmstrip a:hover {
+    background: none repeat scroll 0 0 transparent;
+    height: 100px;
+    text-decoration: none;
+}
+div#filmstrip_container {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 825px;
+}
+table#cart {
+    background: none repeat scroll 0 0 #F0F0F0;
+    border-spacing: 0;
+    padding: 5px;
+    width: 100%;
+}
+table#cart th {
+    border-bottom: 1px solid black;
+    font-weight: normal;
+    text-align: right;
+}
+table#cart th#image {
+    text-align: left;
+}
+table#cart td {
+    height: 110px;
+}
+table#cart td.last_row {
+    border-top: 1px solid black;
+    height: 30px;
+    margin-top: 5px;
+}
+div#basket_buttons {
+    height: 35px;
+}
+div#basket {
+    border: 1px none red;
+    float: right;
+    height: 2em;
+    padding-right: 0;
+    padding-top: 15px;
+    text-align: right;
+    width: 200px;
+}
+div#basket a {
+    border: 1px none green;
+    font-size: 12px;
+    margin-right: -11px;
+    text-decoration: underline;
+}
+div#image_label {
+    background-image: url("/images/osd_background.png");
+    border-radius: 8px 8px 8px 8px;
+    color: white;
+    padding: 1em;
+    position: absolute;
+    width: 500px;
+    z-index: 4;
+}
+div#image_label p.name {
+    margin: 0;
+}
+div#image_label p.latin {
+    font-style: italic;
+    margin: 0;
+}
+div#image_label p.description {
+    font-size: 13px;
+    margin-bottom: 0;
+}
+div#shop_info {
+    background: none repeat scroll 0 0 #F0F0F0;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+div#news_item {
+    background: none repeat scroll 0 0 #F0F0F0;
+    margin-bottom: 1em;
+    padding: 0.5em;
+}

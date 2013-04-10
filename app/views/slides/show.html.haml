@@ -1,0 +1,16 @@
+%p#notice= notice
+
+= image_tag @slide.photo.url
+%p
+  %b Caption:
+  = @slide.caption
+%p
+  %b Position:
+  = @slide.position
+%p
+  %b Visible:
+  = @slide.visible
+
+= link_to 'Edit', edit_slide_path(@slide)
+\|
+= link_to 'Back', slides_path

@@ -1,0 +1,24 @@
+%h3 Categories
+
+%ul#category-photos  
+  - @tags.each do |tag|
+    - child_count = tag.photos.size
+    - if child_count >= 1
+      - photo = tag.photo
+      - if photo
+        %li
+          - html_fragment = capture_haml do
+            %div.photo-frame
+              .photo-div= image_tag photo.attachment.url(:medium)
+              .caption= tag.name
+          = link_to html_fragment, photos_path(:tag => tag.name)
+
+
+%h3 Tags
+#taglist
+  != tag_links(1000, :tags, true)
+    
+%hr
+= link_to 'New Tag', new_tag_path
+
+        

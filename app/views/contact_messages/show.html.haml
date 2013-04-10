@@ -1,0 +1,9 @@
+%p#notice= notice
+
+- if current_user
+  - if current_user.username == 'admin'
+    = render 'show_partial'
+  - else
+    %p Only admin can view it.
+- else
+  %p Only admin can view it.
