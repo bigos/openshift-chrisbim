@@ -40,14 +40,16 @@
         #footer
           &copy; Chris Beard Photography
           = Time.now.year
-      #dump                 
+      #widget                 
         = render :partial => 'layouts/flickr_widget'
-        %p 
-          current user:
-          = current_user.inspect      
-        %p 
-          current session:
-          = current_user_session.inspect
-        %p= params.inspect
+      - if Rails.env == 'development'
+        #dump
+          %p 
+            current user:
+            = current_user.inspect      
+          %p 
+            current session:
+            = current_user_session.inspect
+          %p= params.inspect
           
 %script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"
