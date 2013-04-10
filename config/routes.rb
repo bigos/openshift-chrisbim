@@ -1,4 +1,50 @@
 RailsApp::Application.routes.draw do
+  match 'contact' => 'contact_messages#new'
+  resources :contact_messages
+
+  get "bulk_upload/new"
+
+  resources :tags
+
+  resources :photos
+
+
+  get "workshop_information/show"
+
+  match "/photo_workshops/:duration/days" => 'workshops#index'
+  resources :workshops
+
+
+  match "about_me/:section" => 'about_me#index'
+
+  resources :slides
+
+
+  resources :password_resets, :only => [ :new, :create, :edit, :update ]
+  
+  resources :editables
+
+  get "home_page/index"
+
+  match '/activate/:activation_code' => 'activations#create'
+
+  get "activations/create"
+
+  resources :posts do
+    resources :comments
+  end
+
+  match 'login' => 'user_sessions#new'
+  match 'logout' => 'user_sessions#destroy'
+  resource :user_session
+
+  match 'register' => 'user#new'
+  resource :account, :controller => "users"
+  
+  mount Ckeditor::Engine => '/ckeditor'
+
+  root :to => 'home_page#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
