@@ -8,5 +8,10 @@ if [ ! -d $OPENSHIFT_DATA_DIR/system ]; then
 mkdir $OPENSHIFT_DATA_DIR/system
 fi
 
-ln -sf $OPENSHIFT_DATA_DIR/system $OPENSHIFT_REPO_DIR/public
 
+if [ ! -d $OPENSHIFT_DATA_DIR/ckeditor_assets ]; then
+mkdir $OPENSHIFT_DATA_DIR/ckeditor_assets
+fi
+
+ln -sf $OPENSHIFT_DATA_DIR/system $OPENSHIFT_REPO_DIR/public
+ln -sf $OPENSHIFT_DATA_DIR/ckeditor_assets $OPENSHIFT_REPO_DIR/public
