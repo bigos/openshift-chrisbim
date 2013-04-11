@@ -9,9 +9,10 @@
   %b parent:
   = @tag.parent ? link_to(@tag.parent.name, @tag.parent) : 'none'
   |
-  %b children
-  - @tag.children.each do |child|
-    = link_to child.name, child
+  - if @tag.children
+    %b children
+    - @tag.children.each do |child|
+      = link_to child.name, child
 
 %br
 = link_to 'Edit', edit_tag_path
