@@ -32,6 +32,11 @@ $black-highlight: #222;
   width:250px;
   float:left;
   //background:green;
+  div{
+    p:first-child{
+      margin-top:0px;
+      }
+    }
   }    
 #col3c{margin-left:0px;
   float:right;
