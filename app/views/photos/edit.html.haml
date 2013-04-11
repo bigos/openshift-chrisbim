@@ -3,8 +3,7 @@
 %p Tell me how you want to edit photos, perhaps something could be done about it. Perhaps some tag editing stuff can go here.
 
 
-= image_tag @photo.attachment.url(:thumb)
-
+= link_to image_tag(@photo.attachment.url(:medium)), @photo.attachment.url, {:class => 'fancybox', :title => @photo.attachment_file_name[0..-5].gsub('_',' ')}
 
 
 %p
