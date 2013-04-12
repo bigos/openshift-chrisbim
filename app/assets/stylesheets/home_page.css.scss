@@ -27,8 +27,6 @@ $black-highlight: #222;
 #col3a{margin-left:0px;
   float:left;
   //background:red;
-  a:hover img{text-decoration:none;
-    }
   }
 #col3b{margin-left:105px;
   width:250px;
@@ -64,7 +62,7 @@ $black-highlight: #222;
 #grid_wrapper{}
   
 #flickr-div{
-  a{margin:0px;
+  a:hover{margin:0px;
     text-decoration:none;
     img{
       }
