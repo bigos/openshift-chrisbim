@@ -9,7 +9,9 @@ font-size: 11px;
 }
 a { color: #000; }
 a:visited { color: #666; }
-a:hover { background-color:#eee; }
+a:hover { background-color:#eee; 
+  border-bottom:none;
+}
 .fieldWithErrors {
 padding: 2px;
 background-color: red;
