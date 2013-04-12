@@ -70,6 +70,11 @@ $black-highlight: #222;
     img{
       }
     }
+  a.col0:hover, a.col1:hover, a.col2:hover{
+    border:solid red 1px;
+    border:none;
+    text-decoration:none;
+      }
   a.col0{
     //border:solid red 1px;
   }
