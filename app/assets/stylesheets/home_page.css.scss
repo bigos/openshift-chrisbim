@@ -64,27 +64,26 @@ $black-highlight: #222;
 #flickr-div{
   a{margin:0px 2px 1px 0px;
     text-decoration:none;
-    border:none;
     background:none;
     float:left;
     img{
       }
     }
-  //a:hover{}
+  a:hover{border:none;
+    img{
+      }
+    }
 
   a.col0{
     //border:solid red 1px;
   }
-  a.col0:hover{border:none;}
   a.col1{
     //border:solid red 1px;
     }
-  a.col0:hover{border:none;}      
   a.col2{
     //border:solid red 1px;
     margin:0px 0px 1px 0px;
     }
-  a.col0:hover{border:none;}
   }
   
       
