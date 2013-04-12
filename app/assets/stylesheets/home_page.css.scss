@@ -62,27 +62,23 @@ $black-highlight: #222;
 #grid_wrapper{}
   
 #flickr-div{
-  a{margin:0px;
+  a{margin:0px 2px 1px 0px;
     text-decoration:none;
     border:none;
     background:none;
+    float:left;
     img{
       }
     }
   a.col0{
     //border:solid red 1px;
-    margin:0px 2px 0px 0px;  
-    float:left;
   }
   a.col1{
     //border:solid red 1px;
-    margin:0px 2px 0px 0px;
-    float:left;
     }
   a.col2{
     //border:solid red 1px;
-    margin:0px 0px 0px 0px;
-    float:left;
+    margin:0px 0px 1px 0px;
     }
   }
 
