@@ -70,25 +70,24 @@ $black-highlight: #222;
     img{
       }
     }
+  //a:hover{}
 
   a.col0{
     //border:solid red 1px;
   }
+  a.col0:hover{border:none;}
   a.col1{
     //border:solid red 1px;
     }
+  a.col0:hover{border:none;}      
   a.col2{
     //border:solid red 1px;
     margin:0px 0px 1px 0px;
     }
+  a.col0:hover{border:none;}
   }
-    
-a.col0:hover, a.col1:hover, a.col2:hover{
-  border:solid red 1px;
-  border:none;
-  text-decoration:none;
-  }
-        
+  
+      
 #footer_area{clear:both;
   min-height:5px;
   width:100%;
