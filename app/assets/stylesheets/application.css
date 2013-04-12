@@ -38,7 +38,7 @@ a:visited {
     color: #666666;
 }
 a:hover {
-    border-bottom: none;
+    border-bottom-width: none;
 }
 
 div {
