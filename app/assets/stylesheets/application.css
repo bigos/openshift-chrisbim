@@ -37,9 +37,6 @@ a {
 a:visited {
     color: #666666;
 }
-a:hover {
-    border-bottom-width: none;
-}
 
 div {
   &.field, &.actions {
