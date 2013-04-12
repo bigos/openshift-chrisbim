@@ -68,16 +68,14 @@ $black-highlight: #222;
     background:none;
     float:left;
     }
+  a:hover{
+    border-bottom-width: 0;  
+    }  
   a.col2{
     margin:1px 0px 1px 0px;
     }
   }
-    
-#flickr-div a:hover{
-  border-bottom-width: 0;  
-  }  
 
-    
 #footer_area{clear:both;
   min-height:5px;
   width:100%;
