@@ -16,3 +16,7 @@
 
 # Ignore paperclip assets
 /public/system/
+
+# Ignore ckeditor assets
+/public/ckeditor_assets/
+
